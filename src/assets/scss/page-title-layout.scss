@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* Sass Document */
+/*頁面主標題*/
+.pages-title-layout {
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  line-height: 32px;
+}
+
+.pages-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #232127;
+}
+
+.pages-title-more {
+  float: right;
+}
+.pages-title-more a,
+.pages-title-more .more-btn-list {
+  margin: 0;
+  padding: 5px 20px;
+  display: block;
+  overflow: hidden;
+  border: 0;
+  font-size: 0.75em;
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: #00aeef;
+  font-weight: normal;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.pages-title-more a img,
+.pages-title-more .more-btn-list img {
+  padding-right: 5px;
+}
+
+/*主題標題*/
+.theme-title-layout {
+  margin: 0 0;
+  padding: 15px;
+  font-size: 1.5em;
+  color: #fff;
+  background: #00aeef;
+  text-align: center;
+}
+
+/*內容頁標題*/
+.pages-cont-title {
+  margin: 5px 0;
+  padding: 0;
+  color: #232127;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-left: 8px solid #00aeef;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+.category-title-layout {
+  margin: 0 auto;
+  padding: 5px;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  -webkit-border: 20px;
+  border-radius: 20px;
+  color: #fff;
+  background: #4e74a9;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .pages-title-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .pages-title {
+    width: calc(100% - 100px);
+  }
+  .pages-title-more {
+    float: none;
+  }
+} /*# sourceMappingURL=pages-title-layout.css.map */
