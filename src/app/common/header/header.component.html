@@ -1,1 +1,26 @@
-<p>header works!</p>
+<div class="header-top">
+  <div class="logo">
+    <a [routerLink]="['']">
+      <img src="../../../assets/images/logo.png" style="width: 5%;" />
+    </a>
+  </div>
+</div>
+<mat-toolbar>
+  <div class="linkbar">
+    <ul class="draw-down-navbar">
+      <li>
+        <a [routerLink]="['/data-source-list']"><button mat-button class="nav-bar-btn">選單一</button></a>
+      </li>
+      <li>
+        <button mat-button [matMenuTriggerFor]="dataShareManage" class="nav-bar-btn">
+          選單二
+        </button>
+        <mat-menu #dataShareManage="matMenu" yPosition="below">
+          <button mat-menu-item *ngFor="let link of dataShareUrlList" [routerLink]="link.url">
+            {{ link.urlShow }}
+          </button>
+        </mat-menu>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>

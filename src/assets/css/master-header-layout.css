@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*頁首*/
+.master-header-layout {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  height: 140px;
+}
+.master-header-layout .drawer-navbar--fixed {
+  background-color: #fff;
+}
+
+.master-header-list {
+  margin: 0 auto;
+}
+
+h1.logo-list {
+  margin: 15px 20px !important;
+  padding: 0;
+  float: left;
+}
+h1.logo-list a {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .master-header-layout {
+    height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .master-header-layout {
+    height: 55px;
+  }
+  .master-header-layout:before {
+    display: none;
+  }
+  .master-header-list {
+    max-width: 100%;
+  }
+  h1.logo-list a {
+    width: calc(100% - 100px);
+  }
+  h1.logo-list a img {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=master-header-layout.css.map */

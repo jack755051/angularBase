@@ -1,0 +1,24 @@
+.pages-title-setting-modify {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  .space {
+    width: 0.5rem;
+    height: 2rem;
+    background-color: #00aeef;
+    margin-right: 0.5rem;
+  }
+  .page-title-modify {
+    color: #00aeef;
+    font-weight: bold;
+    font-size: 1.618rem;
+  }
+}
+
+.data-source-data-share-green-ball {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}

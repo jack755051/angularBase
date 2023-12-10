@@ -1,0 +1,82 @@
+.mat-elevation-z8 th,
+.mat-elevation-z8 td {
+  text-align: center;
+  /* 水平居中 */
+  vertical-align: middle;
+}
+
+select {
+  width: 10rem;
+  /* 设置宽度 */
+}
+
+.keywordInput {
+  width: 18rem;
+  /* 设置宽度 */
+}
+
+.data-source-images {
+  border: none;
+  /* 移除邊框 */
+  background: none;
+  /* 移除背景色 */
+  padding: 0;
+  /* 移除內邊距 */
+  cursor: pointer;
+
+  .transmissionMonitoring {
+    width: 75%;
+  }
+
+  .cleanSetting {
+    width: 2.2rem;
+  }
+
+  img {
+    background: transparent !important;
+  }
+}
+
+.status-qualified {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.status-not-qualified {
+  color: red;
+  font-size: 15px;
+}
+
+th mat-header-cell {
+  background: #00aeef;
+}
+
+.status-not-qualified::before {
+  content: "✖";
+  /* 红色叉叉字符 */
+}
+
+.row-not-qualified {
+  color: red;
+}
+
+//#00aeef
+//#0081ef
+//#87faea
+/* 針對啟動狀態的顏色 */
+:host ::ng-deep .mat-mdc-slide-toggle.mat-accent {
+  --mdc-switch-selected-focus-state-layer-color: #00aeef;
+  --mdc-switch-selected-handle-color: #00aeef;
+  --mdc-switch-selected-hover-state-layer-color: #00aeef;
+  --mdc-switch-selected-pressed-state-layer-color: #00aeef;
+  --mdc-switch-selected-focus-handle-color: #0081ef;
+  --mdc-switch-selected-hover-handle-color: #0081ef;
+  --mdc-switch-selected-pressed-handle-color: #0081ef;
+  --mdc-switch-selected-focus-track-color: #87faea;
+  --mdc-switch-selected-hover-track-color: #87faea;
+  --mdc-switch-selected-pressed-track-color: #87faea;
+  --mdc-switch-selected-track-color: #87faea;
+}
