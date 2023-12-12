@@ -4,7 +4,7 @@ import { DataSourceLink } from 'src/interface/test.interface';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
   constructor() {
@@ -29,5 +29,6 @@ export class HeaderComponent {
     {
       urlShow: 'OpenAPI共享管理',
       url: '/data-share/open-api-share-manage',
-    }]
+    },
+  ];
 }

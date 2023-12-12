@@ -1,0 +1,24 @@
+.main-pages-container-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 592px;
+  background-color: red;
+}
+
+.main-pages-container-cont-layout {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  flex-grow: 1;
+}
+
+.main-pages-container-cont {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}

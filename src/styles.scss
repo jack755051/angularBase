@@ -1,4 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@import "/src/assets/scss/breadcrumb-list.scss";
+@import "/src/assets/scss/btn-list.scss";
+@import "/src/assets/scss/cont-style-list.scss";
+@import "/src/assets/scss/drawer-layout.scss";
+@import "/src/assets/scss/drawer.scss";
+// @import "/src/assets/scss/fontawesome.scss";
+@import "/src/assets/scss/header-style.scss";
+@import "/src/assets/scss/icomoon.scss";
+@import "/src/assets/scss/icon.scss";
+@import "/src/assets/scss/index-layout-list.scss";
+@import "/src/assets/scss/input-style.scss";
+@import "/src/assets/scss/main-cont-layout.scss";
+@import "/src/assets/scss/main-header-layout.scss";
+@import "/src/assets/scss/main-nav-menu-layout.scss";
+@import "/src/assets/scss/main-pages-container-layout.scss";
+@import "/src/assets/scss/main-pages-title.scss";
+@import "/src/assets/scss/pages-title-layout.scss";
+@import "/src/assets/scss/pages-title.scss";
+@import "/src/assets/scss/search-layout.scss";
+@import "/src/assets/scss/sort-table-layout.scss";
+@import "/src/assets/scss/table-list.scss";

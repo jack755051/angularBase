@@ -1,0 +1,37 @@
+.breadcrumb-list {
+  font-size: 1rem;
+  color: #00aeef;
+}
+.breadcrumb-list ul {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 0;
+}
+.breadcrumb-list ul li {
+  display: inherit;
+}
+.breadcrumb-list ul li a {
+  text-decoration: none;
+}
+.breadcrumb-list ul li :link {
+  text-decoration: none;
+  color: #949494;
+}
+.breadcrumb-list ul li :visited {
+  text-decoration: none;
+  color: #949494;
+}
+.breadcrumb-list ul li :hover {
+  text-decoration: none;
+  color: #00aeef;
+}
+.breadcrumb-list ul li :active {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #00aeef;
+}
+.breadcrumb-list ul span {
+  color: #949494;
+  padding: 0 10px;
+} /*# sourceMappingURL=breadcrumb-list.css.map */
