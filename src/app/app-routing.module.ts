@@ -1,24 +1,19 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TestPageComponent } from './pages/test-page/test-page.component';
-import { RootComponent } from './pages/root/root.component';
+import { IndexComponent } from './pages/index/index.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'app-root',
+    redirectTo: '/index',
     pathMatch: 'full',
   },
   {
-    path: '',
-    component: RootComponent,
-    children: [
-      {
-        path: 'test-page',
-        component: TestPageComponent
-      }
-    ]
-  }];
+    path: 'index',
+    component: IndexComponent,
+    children: [],
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { enableTracing: true })],

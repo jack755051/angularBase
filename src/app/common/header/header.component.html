@@ -1,36 +1,46 @@
-<div class="header-top">
-  <div class="logo">
-    <a [routerLink]="['']">
-      <img src="../../../assets/images/logo.png" class="logo-percent" />
-    </a>
-  </div>
-</div>
-<mat-toolbar>
-  <div class="linkbar">
-    <ul class="draw-down-navbar">
+<div class="header-style">
+  <img
+    src="../../../assets//images/logo_gxun.jpeg"
+    alt="logo_gxun"
+    class="header-style-logo"
+  />
+  <div class="header-style-navbar">
+    <ul>
+      <li><button mat-button>最新消息</button></li>
+      <li><button mat-button>關於我們</button></li>
       <li>
-        <a [routerLink]="['/data-source-list']"
-          ><button mat-button class="nav-bar-btn">選單一</button></a
-        >
-      </li>
-      <li>
-        <button
-          mat-button
-          [matMenuTriggerFor]="dataShareManage"
-          class="nav-bar-btn"
-        >
-          選單二
+        <button mat-button mat-button [matMenuTriggerFor]="product">
+          產品中心
         </button>
-        <mat-menu #dataShareManage="matMenu" yPosition="below">
-          <button
-            mat-menu-item
-            *ngFor="let link of dataShareUrlList"
-            [routerLink]="link.url"
-          >
-            {{ link.urlShow }}
+        <mat-menu #product="matMenu">
+          <button mat-menu-item>
+            <img
+              src="../../../assets/images/fire.svg"
+              style="width: 10%; margin-right: 0.5rem"
+            />熱銷商品
+          </button>
+          <button mat-menu-item>
+            <img
+              src="../../../assets/images/cctv.svg"
+              style="width: 10%; margin-right: 0.5rem"
+            />攝影機
+          </button>
+          <button mat-menu-item>
+            <img
+              src="../../../assets/images/usb-hub.svg"
+              style="width: 10%; margin-right: 0.5rem"
+            />儲存設備
+          </button>
+          <button mat-menu-item>
+            <img
+              src="../../../assets/images/cloud-data.svg"
+              style="width: 10%; margin-right: 0.5rem"
+            />網路設備
           </button>
         </mat-menu>
       </li>
+      <li><button mat-button>技術支持</button></li>
+      <li><button mat-button>聯繫我們</button></li>
     </ul>
   </div>
-</mat-toolbar>
+</div>

@@ -9,13 +9,18 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+$primary-color: #3498db; // 蓝色
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import "/src/assets/scss/header-style.scss";
+@import "/src/assets/scss/footer-style.scss";
+
 @import "/src/assets/scss/breadcrumb-list.scss";
 @import "/src/assets/scss/btn-list.scss";
 @import "/src/assets/scss/cont-style-list.scss";
 @import "/src/assets/scss/drawer-layout.scss";
 @import "/src/assets/scss/drawer.scss";
-// @import "/src/assets/scss/fontawesome.scss";
-@import "/src/assets/scss/header-style.scss";
 @import "/src/assets/scss/icomoon.scss";
 @import "/src/assets/scss/icon.scss";
 @import "/src/assets/scss/index-layout-list.scss";

@@ -21,14 +21,5 @@ export class HeaderComponent {
     },
   ];
 
-  dataShareUrlList: DataSourceLink[] = [
-    {
-      urlShow: 'OpenAPI上架管理',
-      url: '/data-share/open-api-inventory-manage',
-    },
-    {
-      urlShow: 'OpenAPI共享管理',
-      url: '/data-share/open-api-share-manage',
-    },
-  ];
+  matMenuProudct: any = [];
 }

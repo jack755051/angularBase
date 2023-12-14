@@ -7,11 +7,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './common/footer/footer.component';
 import { HeaderComponent } from './common/header/header.component';
-import { IndexComponent } from './common/index/index.component';
+import { IndexComponent } from './pages/index/index.component';
 import { AlertComponent } from './common/dialog/alert/alert.component';
-import { TestPageComponent } from './pages/test-page/test-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RootComponent } from './pages/root/root.component';
 
 // import * as echarts from 'echarts';
 // import { NgxEchartsModule } from 'ngx-echarts';
@@ -30,6 +28,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -38,8 +37,6 @@ import { MatSortModule } from '@angular/material/sort';
     HeaderComponent,
     IndexComponent,
     AlertComponent,
-    TestPageComponent,
-    RootComponent
   ],
   imports: [
     // NgxEchartsModule.forRoot({
@@ -60,9 +57,10 @@ import { MatSortModule } from '@angular/material/sort';
     MatMenuModule,
     MatToolbarModule,
     MatButtonModule,
-    MatSortModule
+    MatSortModule,
+    MatSidenavModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
