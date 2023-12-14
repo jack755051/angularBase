@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './common/footer/footer.component';
 import { HeaderComponent } from './common/header/header.component';
-import { IndexComponent } from './pages/index/index.component';
+import { RootComponent } from './pages/root/root.component';
 import { AlertComponent } from './common/dialog/alert/alert.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -35,7 +35,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    IndexComponent,
+    RootComponent,
     AlertComponent,
   ],
   imports: [
