@@ -1,0 +1,41 @@
+<main class="main-pages-container-outbox">
+  <!-- 主內容區 -->
+  <div class="main-pages-container-cont-layout-l">
+    <div class="main-pages-container-cont">
+      <!-- 內容放置區 -->
+      <div class="container-row">
+        <div class="cont">
+          <!-- 麵包屑＋回上一頁 -->
+          <div class="pages-title-layout">
+            <!-- 麵包屑 -->
+            <div class="breadcrumb-list">
+              <ul>
+                <li class="breadcrumb-item">
+                  <a routerLink="/index/home">首頁</a>
+                </li>
+                <span>></span>
+                <li class="breadcrumb-item">
+                  <a routerLink="/index/product">產品首頁</a>
+                </li>
+                <span>></span>
+                <li class="breadcrumb-item">
+                  <a>熱銷產品</a>
+                </li>
+              </ul>
+            </div>
+            <span class="pages-title-more">
+              <a class="back-btn" (click)="goBackService.back()"
+                ><i class="icon-back_02"></i>回上一頁</a
+              >
+            </span>
+          </div>
+          <!-- 頁面標題 -->
+          <div>
+            <span class="pages-cont-left"></span>
+            <div class="pages-cont-title-2">熱銷產品</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

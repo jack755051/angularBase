@@ -1,0 +1,14 @@
+<!-- 輪播圖 -->
+<div class="carousel-image-container">
+  <!-- 左右操作按鈕 -->
+  <div class="carousel-operation-btn"></div>
+  <!-- 圖片本體 -->
+  <div class="carousel-image"></div>
+  <!-- 下方bar -->
+  <div class="carousel-bottom-bar">
+    <div
+      *ngFor="let item of imageArray; let i = index"
+      class="carousel-bottom-bar-rectangle"
+    ></div>
+  </div>
+</div>

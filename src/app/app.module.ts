@@ -5,10 +5,6 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FooterComponent } from './common/footer/footer.component';
-import { HeaderComponent } from './common/header/header.component';
-import { IndexComponent } from './pages/index/index.component';
-import { AlertComponent } from './common/dialog/alert/alert.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // import * as echarts from 'echarts';
@@ -30,6 +26,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
+//page
+import { FooterComponent } from './common/footer/footer.component';
+import { HeaderComponent } from './common/header/header.component';
+import { IndexComponent } from './pages/index/index.component';
+import { AlertComponent } from './common/dialog/alert/alert.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProductMainPageComponent } from './pages/product-main-page/product-main-page.component';
+import { ProductHotPageComponent } from './pages/product-hot-page/product-hot-page.component';
+import { CarouselComponent } from './common/carousel/carousel.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +43,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     HeaderComponent,
     IndexComponent,
     AlertComponent,
+    HomeComponent,
+    ProductMainPageComponent,
+    ProductHotPageComponent,
+    CarouselComponent,
   ],
   imports: [
     // NgxEchartsModule.forRoot({

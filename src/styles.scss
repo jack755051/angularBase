@@ -15,8 +15,17 @@ $primary-color: #3498db; // 蓝色
 
 @import "/src/assets/scss/header-style.scss";
 @import "/src/assets/scss/footer-style.scss";
-
+@import "/src/assets/scss/main-pages-style.scss";
+@import "/src/assets/scss/container.style.scss";
+//麵包屑
 @import "/src/assets/scss/breadcrumb-list.scss";
+//頁面標題
+@import "/src/assets/scss/pages-title-layout.scss";
+@import "/src/assets/scss/pages-title.scss";
+//輪播圖
+@import "/src/assets/scss/carousel-style.scss";
+// ===================
+
 @import "/src/assets/scss/btn-list.scss";
 @import "/src/assets/scss/cont-style-list.scss";
 @import "/src/assets/scss/drawer-layout.scss";
@@ -25,13 +34,12 @@ $primary-color: #3498db; // 蓝色
 @import "/src/assets/scss/icon.scss";
 @import "/src/assets/scss/index-layout-list.scss";
 @import "/src/assets/scss/input-style.scss";
-@import "/src/assets/scss/main-cont-layout.scss";
+// @import "/src/assets/scss/main-cont-layout.scss";
 @import "/src/assets/scss/main-header-layout.scss";
 @import "/src/assets/scss/main-nav-menu-layout.scss";
 @import "/src/assets/scss/main-pages-container-layout.scss";
 @import "/src/assets/scss/main-pages-title.scss";
-@import "/src/assets/scss/pages-title-layout.scss";
-@import "/src/assets/scss/pages-title.scss";
+
 @import "/src/assets/scss/search-layout.scss";
 @import "/src/assets/scss/sort-table-layout.scss";
 @import "/src/assets/scss/table-list.scss";
