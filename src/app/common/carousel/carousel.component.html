@@ -1,7 +1,14 @@
 <!-- 輪播圖 -->
 <div class="carousel-image-container">
   <!-- 左右操作按鈕 -->
-  <div class="carousel-operation-btn"></div>
+  <div class="carousel-operation-btn">
+    <button mat-button (click)="presentImage()">
+      <mat-icon fontIcon="chevron_left"></mat-icon>
+    </button>
+    <button mat-button (click)="nextImage()">
+      <mat-icon fontIcon="chevron_right"></mat-icon>
+    </button>
+  </div>
   <!-- 圖片本體 -->
   <div class="carousel-image"></div>
   <!-- 下方bar -->

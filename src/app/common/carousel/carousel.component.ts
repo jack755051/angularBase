@@ -13,4 +13,12 @@ export class CarouselComponent implements OnInit {
     this.imageArray.push('aaa', 'bbb', 'ccc');
   }
   ngOnInit(): void {}
+
+  presentImage() {
+    console.log('上一張');
+  }
+
+  nextImage() {
+    console.log('下一張');
+  }
 }
