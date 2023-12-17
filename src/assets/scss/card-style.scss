@@ -1,16 +1,44 @@
-.card-style-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 100%;
-    overflow-x: auto;
+.card-style-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 
-.card-container-style{
-    margin: 10px;
-    min-width: 30%;
-    img{
-        width: 100%;
-    }
+// 熱銷新品的標題
+.card-style-title {
+  width: 40%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: $primary-font-color;
+  background-color: $primary-background-color ;
+  margin-bottom: 3rem;
+  border-radius: 0.4rem;
+  box-shadow: 12px 10px 11px rgba(0, 0, 0, 0.3)
+}
+
+.card-style-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.card-container-style {
+  margin: 10px;
+  min-width: 20%;
+  border-radius: 0.8rem !important;
+  padding: 10px 15px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.check_more_btn {
+  background-color: $primary-background-color !important;
 }

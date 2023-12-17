@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Sass Document */
 /*頁面主標題*/
 .pages-title-layout {
@@ -19,6 +20,7 @@
 .pages-title-more {
   float: right;
 }
+
 .pages-title-more a,
 .pages-title-more .more-btn-list {
   margin: 0;
@@ -35,6 +37,7 @@
   display: flex;
   align-items: center;
 }
+
 .pages-title-more a img,
 .pages-title-more .more-btn-list img {
   padding-right: 5px;
@@ -68,14 +71,14 @@
   color: #232127;
   font-size: 1.5rem;
   font-weight: bold;
-  border-left: 10px solid $primary-color;
+  border-left: 10px solid $primary-background-color;
   padding-left: 15px;
   margin-bottom: 20px;
   height: 40px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-around;
-  
+
 }
 
 .category-title-layout {
@@ -96,10 +99,14 @@
     flex-direction: row;
     align-items: flex-start;
   }
+
   .pages-title {
     width: calc(100% - 100px);
   }
+
   .pages-title-more {
     float: none;
   }
-} /*# sourceMappingURL=pages-title-layout.css.map */
+}
+
+/*# sourceMappingURL=pages-title-layout.css.map */

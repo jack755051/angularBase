@@ -4,12 +4,16 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-$primary-color: #3498db; // 蓝色
+// 主要背景色
+$primary-background-color: #3498db;
+// 主要文字顏色
+$primary-font-color: #e6e6e6;
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 

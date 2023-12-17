@@ -1,4 +1,4 @@
-import { cardData } from 'src/interface/card.interface';
+import { cardData, cardTitleType } from 'src/interface/card.interface';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  cardDataTitleFormHome = cardTitleType
   hotProuctCard: cardData[] = [
     {
       title: '2百萬畫素 四合一功能 水下50米紅外線攝影機',
@@ -42,6 +43,6 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  constructor() {}
-  ngOnInit(): void {}
+  constructor() { }
+  ngOnInit(): void { }
 }

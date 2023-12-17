@@ -1,6 +1,6 @@
 export enum cardTitleType {
-  '話題熱銷' = 1,
-  '新品上市' = 2,
+  'hot' = '話題熱銷',
+  'newArrival' = '新品上市',
 }
 
 export interface cardData {

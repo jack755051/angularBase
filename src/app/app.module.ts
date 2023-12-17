@@ -26,6 +26,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatRippleModule } from '@angular/material/core';
+
 //page
 import { FooterComponent } from './common/footer/footer.component';
 import { HeaderComponent } from './common/header/header.component';
@@ -36,6 +39,7 @@ import { ProductMainPageComponent } from './pages/product-main-page/product-main
 import { ProductHotPageComponent } from './pages/product-hot-page/product-hot-page.component';
 import { CarouselComponent } from './common/carousel/carousel.component';
 import { CardComponent } from './common/card/card.component';
+import { ProductPageComponent } from './common/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +53,7 @@ import { CardComponent } from './common/card/card.component';
     ProductHotPageComponent,
     CarouselComponent,
     CardComponent,
+    ProductPageComponent,
   ],
   imports: [
     // NgxEchartsModule.forRoot({
@@ -72,8 +77,10 @@ import { CardComponent } from './common/card/card.component';
     MatSortModule,
     MatSidenavModule,
     MatCardModule,
+    MatProgressSpinnerModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
