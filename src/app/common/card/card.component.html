@@ -12,9 +12,12 @@
       <mat-card-content>{{ item.descripation }}</mat-card-content>
       <mat-card-actions>
         <!-- <button mat-button *ngFor="let itemTag of item.tag">{{ itemTag }}</button> -->
-        <button mat-button (click)="check_more_card(i)" class="check_more_btn">檢視更多</button>
+        <!-- <button mat-button (click)="check_more_card(i)" class="check-more-btn">檢視更多</button>
+        <br /> -->
+        <div matRipple [matRippleColor]="myColor" class="check-more-container">
+          <button mat-button (click)="check_more_card(i)">檢視更多</button>
+        </div>
       </mat-card-actions>
     </mat-card>
   </div>
-
 </div>

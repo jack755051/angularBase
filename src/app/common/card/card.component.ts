@@ -11,6 +11,8 @@ export class CardComponent implements OnInit {
   @Input() cardDataTitle!: cardTitleType;
 
   // cardDataTitle = cardDataTitle;
+  myColor: string = 'rgba(91, 189, 255,0.52)';
+  Centered: string = 'centered'
 
   constructor() { }
 

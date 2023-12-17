@@ -1,7 +1,8 @@
 .card-style-box {
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
+  margin-top: 3rem;
 }
 
 // 熱銷新品的標題
@@ -39,6 +40,30 @@
   }
 }
 
-.check_more_btn {
+
+
+.check-more-container {
+  width: 6.5rem !important;
+  height: 2.5rem !important;
+  text-align: center;
+
+  &:active {
+    color: $primary-font-color !important;
+  }
+
+  >button {
+    width: 6.5rem !important;
+    height: 2.5rem !important;
+
+  }
+}
+
+.check-more-btn {
+  width: 6.5rem;
+  height: 2.5rem !important;
+  border-radius: 0.4rem !important;
   background-color: $primary-background-color !important;
+  color: $primary-font-color !important;
+  margin-top: 0.5rem !important;
+  padding: 0 1rem !important;
 }
