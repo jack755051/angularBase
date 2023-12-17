@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { cardData, cardTitleType } from 'src/interface/card.interface';
 
 @Component({
@@ -8,7 +8,9 @@ import { cardData, cardTitleType } from 'src/interface/card.interface';
 })
 export class CardComponent implements OnInit {
   @Input() cardData: cardData[] = [];
-  @Input() cardDataTitle!: cardTitleType;
+  // @Input() cardDataTitle!: cardTitleType;
+
+  // cardDataTitle = cardDataTitle;
 
   constructor() {}
 

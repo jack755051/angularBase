@@ -1,4 +1,4 @@
-import { NgModule, } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 
@@ -25,7 +25,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSidenavModule } from '@angular/material/sidenav';
-
+import { MatCardModule } from '@angular/material/card';
 //page
 import { FooterComponent } from './common/footer/footer.component';
 import { HeaderComponent } from './common/header/header.component';
@@ -35,6 +35,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductMainPageComponent } from './pages/product-main-page/product-main-page.component';
 import { ProductHotPageComponent } from './pages/product-hot-page/product-hot-page.component';
 import { CarouselComponent } from './common/carousel/carousel.component';
+import { CardComponent } from './common/card/card.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { CarouselComponent } from './common/carousel/carousel.component';
     ProductMainPageComponent,
     ProductHotPageComponent,
     CarouselComponent,
+    CardComponent,
   ],
   imports: [
     // NgxEchartsModule.forRoot({
@@ -69,6 +71,7 @@ import { CarouselComponent } from './common/carousel/carousel.component';
     MatButtonModule,
     MatSortModule,
     MatSidenavModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

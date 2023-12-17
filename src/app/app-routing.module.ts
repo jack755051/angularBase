@@ -8,7 +8,7 @@ import { ProductHotPageComponent } from './pages/product-hot-page/product-hot-pa
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '/index/home',
     pathMatch: 'full',
   },
   {

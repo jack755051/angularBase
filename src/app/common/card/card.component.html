@@ -1,5 +1,5 @@
 <div class="card-style-box">
-  <div class="card-style-title">{{cardDataTitle}}</div>
+  <!-- <div class="card-style-title">{{ cardDataTitle }}</div> -->
 
   <mat-card
     *ngFor="let item of cardData; let i = index"
@@ -8,7 +8,7 @@
     <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>{{ item.title }}</mat-card-title>
-        <mat-card-subtitle>{{ item.tag }}</mat-card-subtitle>
+        <mat-card-subtitle>{{ item.model }}</mat-card-subtitle>
       </mat-card-title-group>
     </mat-card-header>
     <img mat-card-image src="{{ item.imgUrl }}" alt="Photo of a Shiba Inu" />
