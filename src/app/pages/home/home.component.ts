@@ -1,5 +1,6 @@
 import { cardData, cardTitleType } from 'src/interface/card.interface';
 import { Component, OnInit } from '@angular/core';
+import { imageArray } from 'src/interface/image.interface';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   cardDataTitleFormHome = cardTitleType
+  imageArraySrc: imageArray[] = [
+    { imageSrc: '/assets/images/banner_03_realityCity.png', imageAlt: 'city_01' },
+    { imageSrc: '/assets/images/banner_02_realityCity.png', imageAlt: 'city_02' },
+    { imageSrc: '/assets/images/banner_01.png', imageAlt: 'city_03' },
+    // { imageSrc: '/assets/images/banner_01.png', imageAlt: 'city_04' },
+  ]
 
   //話題熱銷
   hotProuctCard: cardData[] = [

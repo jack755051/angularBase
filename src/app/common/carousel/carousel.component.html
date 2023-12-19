@@ -1,21 +1,30 @@
 <!-- 輪播圖 -->
 <div class="carousel-image-container">
+
+  <!-- 圖片本體 -->
+  <div class="carousel-image">
+    <img *ngFor="let imageItem of imageArray; let i = index" src="{{imageItem.imageSrc}}" alt="{{imageItem.imageAlt}}"
+      [ngClass]="{'active': i === currentImageIndex}">
+  </div>
+
   <!-- 左右操作按鈕 -->
   <div class="carousel-operation-btn">
-    <button mat-button (click)="presentImage()">
+    <button mat-button (click)="changeImage('present')" color="warn">
       <mat-icon fontIcon="chevron_left"></mat-icon>
     </button>
-    <button mat-button (click)="nextImage()">
+    <button mat-button (click)="changeImage('next')" color="warn">
       <mat-icon fontIcon="chevron_right"></mat-icon>
     </button>
   </div>
-  <!-- 圖片本體 -->
-  <div class="carousel-image"></div>
+
   <!-- 下方bar -->
+  <!-- <div class="carousel-bottom-bar">
+    <div *ngFor="let item of indices; let j = index" class="carousel-bottom-bar-rectangle"
+      (click)="changeImageBottombtn(j)" [ngClass]="{'active': j === currentImageIndex}"></div>
+  </div> -->
+
   <div class="carousel-bottom-bar">
-    <div
-      *ngFor="let item of imageArray; let i = index"
-      class="carousel-bottom-bar-rectangle"
-    ></div>
+    <div *ngFor="let item of indices; let j = index" class="carousel-bottom-bar-rectangle"
+      (click)="changeImageBottombtn(j)" [ngClass]="{'active': j === currentImageIndex}"></div>
   </div>
 </div>

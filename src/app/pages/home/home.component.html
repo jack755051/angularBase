@@ -3,13 +3,14 @@
   <div class="main-pages-container-cont-layout-l">
     <div class="main-pages-container-cont">
       <!-- 輪播圖 -->
-      <app-carousel></app-carousel>
+      <app-carousel [imageArray]="imageArraySrc"></app-carousel>
 
       <!-- 內容放置區 -->
       <div class="container-row">
         <div class="cont">
+          <!-- 話題熱銷 -->
           <app-card [cardData]="hotProuctCard" [cardDataTitle]="cardDataTitleFormHome['hot']"></app-card>
-
+          <!-- 新品上市 -->
           <app-card [cardData]="newArrivalProuctCard" [cardDataTitle]="cardDataTitleFormHome['newArrival']"></app-card>
         </div>
       </div>
