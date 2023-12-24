@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { cardData, cardTitleType } from 'src/interface/card.interface';
 
 @Component({
@@ -14,12 +15,15 @@ export class CardComponent implements OnInit {
   myColor: string = 'rgba(91, 189, 255,0.52)';
   Centered: string = 'centered'
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void { }
 
   //查看更多_進入商品頁面
   check_more_card(i: number) {
-    console.log("序列index", i)
+    const productId = this.cardData[i].productId;
+    this.router.navigate(['/product', productId]);
   }
 }

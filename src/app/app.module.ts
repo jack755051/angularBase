@@ -28,7 +28,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatRippleModule } from '@angular/material/core';
-
+import { MatTabsModule } from '@angular/material/tabs';
 //page
 import { FooterComponent } from './common/footer/footer.component';
 import { HeaderComponent } from './common/header/header.component';
@@ -78,9 +78,10 @@ import { ProductPageComponent } from './common/product-page/product-page.compone
     MatSidenavModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    MatRippleModule
+    MatRippleModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

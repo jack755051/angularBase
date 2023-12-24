@@ -1,1 +1,59 @@
-<p>product-page works!</p>
+<main class="main-pages-container-outbox">
+  <!-- 主內容區 -->
+  <div class="main-pages-container-cont-layout-l">
+    <div class="main-pages-container-cont">
+      <!-- 內容放置區 -->
+      <div class="container-row">
+        <div class="cont">
+          <!-- 上方圖文部分 -->
+          <div class="product-show-bar">
+            <!-- 左側圖片展示區 -->
+            <div class="product-show-bar-image">
+              <img src="{{ result.imgUrl }}" alt="" />
+            </div>
+            <!-- 右側文字說明區 -->
+            <div class="product-show-bar-article">
+              <!-- 上方標籤 新上市 或 熱銷產品 -->
+              <div class="article-tag" *ngIf="hotOrNew"></div>
+              <!-- 說明顯示區 -->
+              <div class="article-aera">
+                <h2>{{ result.title }}</h2>
+                <ul>
+                  <li
+                    *ngFor="
+                      let item of result.descripationGroup.descripationArticle
+                    "
+                  >
+                    {{ item }}
+                  </li>
+                </ul>
+              </div>
+              <!-- 下方icon區域 -->
+              <div class="article-icon">
+                <img
+                  *ngFor="
+                    let iconItem of result.descripationGroup
+                      .descripationImageUrl
+                  "
+                  src="{{ iconItem }}"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- 下方產品數據 -->
+          <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+            <mat-tab label="產品規格"></mat-tab>
+            <mat-tab label="目錄下載">目錄下載</mat-tab>
+            <mat-tab label="相關產品">相關產品</mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div (click)="download()" class="downloadButton">
+  <img src="/assets/images/download.svg" alt="" id="downloadProduct" />
+  <label for="downloadProduct"> <span>檔案下載</span></label>
+</div>

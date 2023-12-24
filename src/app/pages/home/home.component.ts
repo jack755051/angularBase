@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
     {
       title: '2百萬畫素 四合一功能 水下50米紅外線攝影機',
       model: 'GC-AHD50-288',
+      productId: "202312201058",
       imgUrl: '/assets/images/GC-AHD50-288.jpeg',
       descripation:
         '影像解析度：1080PFuIHD即時影像。可達水下50米使用，適合遊艇、近海養殖使用。',
@@ -29,6 +30,7 @@ export class HomeComponent implements OnInit {
     {
       title: '2百萬畫素 四合一功能 水下50米紅外線攝影機',
       model: 'GC-AHD50-288',
+      productId: "202312201058",
       imgUrl: '/assets/images/GC-AHD50-288.jpeg',
       descripation:
         '影像解析度：1080PFuIHD即時影像。可達水下50米使用，適合遊艇、近海養殖使用。',
@@ -37,6 +39,7 @@ export class HomeComponent implements OnInit {
     {
       title: '2百萬畫素 四合一功能 水下50米紅外線攝影機',
       model: 'GC-AHD50-288',
+      productId: "202312201058",
       imgUrl: '/assets/images/GC-AHD50-288.jpeg',
       descripation:
         '影像解析度：1080PFuIHD即時影像。可達水下50米使用，適合遊艇、近海養殖使用。',
@@ -45,6 +48,7 @@ export class HomeComponent implements OnInit {
     {
       title: '2百萬畫素 四合一功能 水下50米紅外線攝影機',
       model: 'GC-AHD50-288',
+      productId: "202312201058",
       imgUrl: '/assets/images/GC-AHD50-288.jpeg',
       descripation:
         '影像解析度：1080PFuIHD即時影像。可達水下50米使用，適合遊艇、近海養殖使用。',
@@ -57,6 +61,7 @@ export class HomeComponent implements OnInit {
     {
       title: '8百萬畫素網路型星光夜視攝影機(電動變焦)',
       model: 'GP-BH048IP-AFZ',
+      productId: "202312201101",
       imgUrl: '/assets/images/GP-BH048IP-AFZ.png',
       descripation:
         '採用H.265/H.264/MJPEG壓縮格式並支援雙碼流設計。',
@@ -65,6 +70,7 @@ export class HomeComponent implements OnInit {
     {
       title: '8百萬畫素網路型星光夜視攝影機(電動變焦)',
       model: 'GP-BH048IP-AFZ',
+      productId: "202312201101",
       imgUrl: '/assets/images/GP-BH048IP-AFZ.png',
       descripation:
         '採用H.265/H.264/MJPEG壓縮格式並支援雙碼流設計。',
@@ -73,6 +79,7 @@ export class HomeComponent implements OnInit {
     {
       title: '8百萬畫素網路型星光夜視攝影機(電動變焦)',
       model: 'GP-BH048IP-AFZ',
+      productId: "202312201101",
       imgUrl: '/assets/images/GP-BH048IP-AFZ.png',
       descripation:
         '採用H.265/H.264/MJPEG壓縮格式並支援雙碼流設計。',
@@ -81,6 +88,7 @@ export class HomeComponent implements OnInit {
     {
       title: '8百萬畫素網路型星光夜視攝影機(電動變焦)',
       model: 'GC-AHD50-288',
+      productId: "202312201101",
       imgUrl: '/assets/images/GP-BH048IP-AFZ.png',
       descripation:
         '採用H.265/H.264/MJPEG壓縮格式並支援雙碼流設計。',

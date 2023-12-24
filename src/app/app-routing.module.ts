@@ -4,6 +4,7 @@ import { IndexComponent } from './pages/index/index.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductMainPageComponent } from './pages/product-main-page/product-main-page.component';
 import { ProductHotPageComponent } from './pages/product-hot-page/product-hot-page.component';
+import { ProductPageComponent } from './common/product-page/product-page.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,7 @@ const routes: Routes = [
         component: ProductMainPageComponent,
       },
       { path: 'product/hot', component: ProductHotPageComponent },
+      { path: 'product/:productId', component: ProductPageComponent },
     ],
   },
 ];

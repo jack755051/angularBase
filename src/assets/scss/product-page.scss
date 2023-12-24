@@ -1,0 +1,46 @@
+.product-show-bar{
+  width: 100%;
+  display: flex;
+}
+.product-show-bar-image{
+  flex: 1;
+}
+
+.product-show-bar-article{
+  flex:1;
+  > .article-icon{
+    margin: 1.2rem 0 0 1.2rem;
+    display: flex;
+    align-items: center;
+    > img {
+      width: 15%;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+.downloadButton {
+  width: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  > img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 0.8rem;
+  }
+  >label span{
+    font-size: 1.2rem;
+    font-weight:bold;
+  }
+}
