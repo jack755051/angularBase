@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { productItems } from 'src/interface/product.interface';
+import {
+  cameraSpecificationType,
+  productItems,
+} from 'src/interface/product.interface';
 
 @Component({
   selector: 'app-product-page',
@@ -37,6 +40,10 @@ export class ProductPageComponent implements OnInit {
     },
     tag: ['水下', '紅外線', '四合一', '2百萬畫素'],
   };
+
+  // camera:cameraSpecificationType={
+
+  // }
 
   constructor(private route: ActivatedRoute) {}
 

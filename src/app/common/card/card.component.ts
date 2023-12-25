@@ -13,17 +13,16 @@ export class CardComponent implements OnInit {
 
   // cardDataTitle = cardDataTitle;
   myColor: string = 'rgba(91, 189, 255,0.52)';
-  Centered: string = 'centered'
+  Centered: string = 'centered';
 
-  constructor(
-    private router: Router
-  ) { }
+  constructor(private router: Router) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   //查看更多_進入商品頁面
   check_more_card(i: number) {
-    const productId = this.cardData[i].productId;
-    this.router.navigate(['/product', productId]);
+    // const productId = this.cardData[i].productId;
+    const productId = 1212;
+    this.router.navigate(['/index/product', productId]);
   }
 }

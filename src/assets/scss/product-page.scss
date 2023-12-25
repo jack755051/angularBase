@@ -1,14 +1,14 @@
-.product-show-bar{
+.product-show-bar {
   width: 100%;
   display: flex;
 }
-.product-show-bar-image{
+.product-show-bar-image {
   flex: 1;
 }
 
-.product-show-bar-article{
-  flex:1;
-  > .article-icon{
+.product-show-bar-article {
+  flex: 1;
+  > .article-icon {
     margin: 1.2rem 0 0 1.2rem;
     display: flex;
     align-items: center;
@@ -19,28 +19,29 @@
   }
 }
 
-
-
-
-
-
-
-
-
-.downloadButton {
-  width: 6rem;
+.mat-tab-download {
+  width: 30%;
+  padding-top: 2rem;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  align-items: center;
-  > img {
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-bottom: 0.8rem;
-  }
-  >label span{
-    font-size: 1.2rem;
-    font-weight:bold;
+
+  > .downloadButton {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    > img {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-bottom: 0.8rem;
+    }
+    > label span {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
   }
 }

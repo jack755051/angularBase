@@ -44,7 +44,27 @@
           <!-- 下方產品數據 -->
           <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
             <mat-tab label="產品規格"></mat-tab>
-            <mat-tab label="目錄下載">目錄下載</mat-tab>
+            <mat-tab label="目錄下載">
+              <div class="mat-tab-download">
+                <div (click)="download()" class="downloadButton">
+                  <img
+                    src="/assets/images/pdf_download.svg"
+                    alt=""
+                    id="downloadProduct"
+                  />
+                  <label for="downloadProduct"> <span>PDF下載</span></label>
+                </div>
+
+                <div (click)="download()" class="downloadButton">
+                  <img
+                    src="/assets/images/words_download.svg"
+                    alt=""
+                    id="downloadProduct"
+                  />
+                  <label for="downloadProduct"> <span>WORDS下載</span></label>
+                </div>
+              </div>
+            </mat-tab>
             <mat-tab label="相關產品">相關產品</mat-tab>
           </mat-tab-group>
         </div>
@@ -52,8 +72,3 @@
     </div>
   </div>
 </main>
-
-<div (click)="download()" class="downloadButton">
-  <img src="/assets/images/download.svg" alt="" id="downloadProduct" />
-  <label for="downloadProduct"> <span>檔案下載</span></label>
-</div>
