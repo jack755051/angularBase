@@ -3,11 +3,12 @@
     src="../../../assets//images/logo_gxun.jpeg"
     alt="logo_gxun"
     class="header-style-logo"
+    routerLink="home"
   />
   <div class="header-style-navbar">
     <ul>
-      <li><button mat-button>最新消息</button></li>
-      <li><button mat-button>關於我們</button></li>
+      <li><button mat-button routerLink="latest_news">最新消息</button></li>
+      <li><button mat-button routerLink="aboutguangxun">關於我們</button></li>
       <li>
         <button mat-button mat-button [matMenuTriggerFor]="product">
           產品中心

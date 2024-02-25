@@ -40,6 +40,8 @@ import { ProductHotPageComponent } from './pages/product-hot-page/product-hot-pa
 import { CarouselComponent } from './common/carousel/carousel.component';
 import { CardComponent } from './common/card/card.component';
 import { ProductPageComponent } from './common/product-page/product-page.component';
+import { AboutmeComponent } from './pages/aboutme/aboutme.component';
+import { LastestNewsComponent } from './pages/lastest-news/lastest-news.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,8 @@ import { ProductPageComponent } from './common/product-page/product-page.compone
     CarouselComponent,
     CardComponent,
     ProductPageComponent,
+    AboutmeComponent,
+    LastestNewsComponent,
   ],
   imports: [
     // NgxEchartsModule.forRoot({

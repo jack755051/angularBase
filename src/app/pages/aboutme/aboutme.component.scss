@@ -1,0 +1,26 @@
+.about_me_article {
+  margin-top: 2rem;
+  width: 60%;
+
+  > h1 {
+    color: #5a991a;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+  }
+
+  .about_me_content {
+    .spec_word {
+      font-weight: bolder;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      color: #ff0000;
+    }
+    .about_me_content_node{
+      font-size: large;
+      font-weight: bolder;
+      margin: 1rem 0;
+    }
+  }
+
+}

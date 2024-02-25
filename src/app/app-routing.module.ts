@@ -1,10 +1,14 @@
-import { NgModule, Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { IndexComponent } from './pages/index/index.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ProductMainPageComponent } from './pages/product-main-page/product-main-page.component';
-import { ProductHotPageComponent } from './pages/product-hot-page/product-hot-page.component';
-import { ProductPageComponent } from './common/product-page/product-page.component';
+import {NgModule, Component} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {IndexComponent} from './pages/index/index.component';
+import {HomeComponent} from './pages/home/home.component';
+import {ProductMainPageComponent} from './pages/product-main-page/product-main-page.component';
+import {ProductHotPageComponent} from './pages/product-hot-page/product-hot-page.component';
+import {AboutmeComponent} from './pages/aboutme/aboutme.component';
+import {LastestNewsComponent} from './pages/lastest-news/lastest-news.component'
+
+import {ProductPageComponent} from './common/product-page/product-page.component';
+
 
 const routes: Routes = [
   {
@@ -21,17 +25,26 @@ const routes: Routes = [
         component: HomeComponent,
       },
       {
+        path: 'latest_news',
+        component: LastestNewsComponent,
+      },
+      {
+        path: 'aboutguangxun',
+        component: AboutmeComponent,
+      },
+      {
         path: 'product',
         component: ProductMainPageComponent,
       },
-      { path: 'product/hot', component: ProductHotPageComponent },
-      { path: 'product/:productId', component: ProductPageComponent },
+      {path: 'product/hot', component: ProductHotPageComponent},
+      {path: 'product/:productId', component: ProductPageComponent},
     ],
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
+  imports: [RouterModule.forRoot(routes, {enableTracing: true})],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}
