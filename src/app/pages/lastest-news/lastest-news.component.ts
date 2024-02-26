@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./lastest-news.component.scss']
 })
 export class LastestNewsComponent {
-
+  panelOpenState = false;
 }

@@ -1,6 +1,6 @@
 .container-row {
   margin: 15px auto;
-  padding: 20px 40px 40px 40px;
+  padding: 40px;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -15,4 +15,9 @@
   margin: 0;
   flex-grow: 1;
   max-width: 100%;
+}
+
+.cont-expansion-panel{
+  width: 100%;
+  margin-top: 2em;
 }
