@@ -42,6 +42,8 @@ import { CardComponent } from './common/card/card.component';
 import { ProductPageComponent } from './common/product-page/product-page.component';
 import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { LastestNewsComponent } from './pages/lastest-news/lastest-news.component';
+import { TechnicalSupportComponent } from './pages/technical-support/technical-support.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,8 @@ import { LastestNewsComponent } from './pages/lastest-news/lastest-news.componen
     ProductPageComponent,
     AboutmeComponent,
     LastestNewsComponent,
+    TechnicalSupportComponent,
+    ContactUsComponent,
   ],
   imports: [
     // NgxEchartsModule.forRoot({

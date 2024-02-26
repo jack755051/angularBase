@@ -8,6 +8,8 @@ import {AboutmeComponent} from './pages/aboutme/aboutme.component';
 import {LastestNewsComponent} from './pages/lastest-news/lastest-news.component'
 
 import {ProductPageComponent} from './common/product-page/product-page.component';
+import {TechnicalSupportComponent} from "./pages/technical-support/technical-support.component";
+import {ContactUsComponent} from "./pages/contact-us/contact-us.component";
 
 
 const routes: Routes = [
@@ -27,6 +29,14 @@ const routes: Routes = [
       {
         path: 'latest_news',
         component: LastestNewsComponent,
+      },
+      {
+        path: 'technical_support',
+        component: TechnicalSupportComponent,
+      },
+      {
+        path: 'contact_us',
+        component: ContactUsComponent,
       },
       {
         path: 'aboutguangxun',
