@@ -46,6 +46,7 @@ import {AboutmeComponent} from './pages/aboutme/aboutme.component';
 import {LastestNewsComponent} from './pages/lastest-news/lastest-news.component';
 import {TechnicalSupportComponent} from './pages/technical-support/technical-support.component';
 import {ContactUsComponent} from './pages/contact-us/contact-us.component';
+import { ErrorPageComponent } from './pages/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import {ContactUsComponent} from './pages/contact-us/contact-us.component';
     LastestNewsComponent,
     TechnicalSupportComponent,
     ContactUsComponent,
+    ErrorPageComponent,
   ],
   imports: [
     // NgxEchartsModule.forRoot({

@@ -10,6 +10,7 @@ import {LastestNewsComponent} from './pages/lastest-news/lastest-news.component'
 import {ProductPageComponent} from './common/product-page/product-page.component';
 import {TechnicalSupportComponent} from "./pages/technical-support/technical-support.component";
 import {ContactUsComponent} from "./pages/contact-us/contact-us.component";
+import {ErrorPageComponent} from "./pages/error-page/error-page.component";
 
 
 const routes: Routes = [
@@ -48,6 +49,7 @@ const routes: Routes = [
       },
       {path: 'product/hot', component: ProductHotPageComponent},
       {path: 'product/:productId', component: ProductPageComponent},
+      {path: '**', pathMatch: 'full', component: ErrorPageComponent},
     ],
   },
 ];
