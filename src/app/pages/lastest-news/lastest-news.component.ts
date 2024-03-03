@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {news} from "../../../interface/news.interface";
+import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 
 //假資料
 const fakeData:news[]=[
@@ -13,6 +14,8 @@ const fakeData:news[]=[
   styleUrls: ['./lastest-news.component.scss']
 })
 export class LastestNewsComponent implements OnInit{
+  @ViewChild(MatAccordion) accordion!: MatAccordion;
+
   panelOpenState = false;
   constructor() {
 

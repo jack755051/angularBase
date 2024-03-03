@@ -12,10 +12,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 //material
 import {
+  MatPaginator,
   MatPaginatorIntl,
   MatPaginatorModule,
 } from '@angular/material/paginator';
-import {MatTableModule} from '@angular/material/table';
+import {MatTableDataSource,MatTableModule} from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSliderModule} from '@angular/material/slider';
@@ -30,6 +31,9 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatRippleModule} from '@angular/material/core';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
 
 //page
 import {FooterComponent} from './common/footer/footer.component';
@@ -92,7 +96,10 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
     MatProgressSpinnerModule,
     MatRippleModule,
     MatTabsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],

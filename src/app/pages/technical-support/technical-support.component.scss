@@ -1,0 +1,37 @@
+.tech-container-row {
+  flex-direction: column;
+
+  > p {
+    margin-bottom: 2rem;
+  }
+}
+
+.tech-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  > .tech-search-bar {
+    display: flex;
+    flex-direction: row;
+
+    mat-form-field {
+      margin-right: 3rem;
+    }
+  }
+
+  > .table-and-paginator {
+    width: 100%;
+
+    > table {
+      :nth-child(3) {
+        width: 32%;
+      }
+
+      th {
+        font-size: 1.2rem
+      }
+    }
+
+  }
+}
