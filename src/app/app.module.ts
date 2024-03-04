@@ -34,6 +34,7 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
+import {MatChipsModule} from '@angular/material/chips';
 
 //page
 import {FooterComponent} from './common/footer/footer.component';
@@ -51,6 +52,7 @@ import {LastestNewsComponent} from './pages/lastest-news/lastest-news.component'
 import {TechnicalSupportComponent} from './pages/technical-support/technical-support.component';
 import {ContactUsComponent} from './pages/contact-us/contact-us.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
+import { FAQComponent } from './pages/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +72,7 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
     TechnicalSupportComponent,
     ContactUsComponent,
     ErrorPageComponent,
+    FAQComponent,
   ],
   imports: [
     // NgxEchartsModule.forRoot({
@@ -99,7 +102,8 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
     MatExpansionModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

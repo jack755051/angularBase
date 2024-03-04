@@ -11,6 +11,7 @@ import {ProductPageComponent} from './common/product-page/product-page.component
 import {TechnicalSupportComponent} from "./pages/technical-support/technical-support.component";
 import {ContactUsComponent} from "./pages/contact-us/contact-us.component";
 import {ErrorPageComponent} from "./pages/error-page/error-page.component";
+import {FAQComponent} from "./pages/faq/faq.component";
 
 
 const routes: Routes = [
@@ -38,6 +39,10 @@ const routes: Routes = [
       {
         path: 'contact_us',
         component: ContactUsComponent,
+      },
+      {
+        path: 'faq',
+        component: FAQComponent,
       },
       {
         path: 'aboutguangxun',

@@ -1,0 +1,22 @@
+.expansion-handler-button {
+  margin: 1.2rem 1rem 0.6rem 1rem;
+}
+
+.expansion-accordion {
+  justify-content: space-between;
+  align-items: center;
+
+  mat-expansion-panel {
+    padding: 0.6rem 0;
+  }
+}
+
+.mat-expansion-panel-header-description {
+  justify-content: space-between !important;
+}
+
+.faq-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
