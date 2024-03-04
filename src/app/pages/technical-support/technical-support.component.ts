@@ -2,6 +2,8 @@ import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import {techSupportData} from "../../../interface/tech-support.interface";
 import {MatPaginator} from "@angular/material/paginator";
 import {MatTableDataSource} from "@angular/material/table";
+import {FormControl} from "@angular/forms";
+import {HttpClient} from '@angular/common/http';
 
 
 const SOURCE_DATA: techSupportData[] = [
@@ -122,20 +124,44 @@ const SOURCE_DATA: techSupportData[] = [
 export class TechnicalSupportComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  techProducts:string[] =[
-    "DVR","NVR","槍型攝影機","高速球形攝影機high-speed","CMS中控軟體"
+  techProducts: string[] = [
+    "DVR", "NVR", "槍型攝影機", "高速球形攝影機high-speed", "CMS中控軟體"
   ]
 
-  techDatas:string[] =[
-    "型錄下載","操作手冊","軟體下載","其他"
+  techDatas: string[] = [
+    "型錄下載", "操作手冊", "軟體下載", "其他"
   ]
 
-  constructor() {
+  //表單初始化-產品類型 / 資料類型 / 關鍵字搜索
+  techProductForm = new FormControl('')
+  techDataForm = new FormControl('')
+  techKeywordForm = new FormControl('')
+
+  // 添加一个标志用于控制是否需要执行搜索
+  isSearchAllowed = true;
+
+  constructor(
+    // private https: HttpClient
+  ) {
   }
 
   ngOnInit() {
     //透過api取得table資料
+    // this.search(null)
 
+    //產品類型
+    this.techProductForm.valueChanges.subscribe(value => {
+      // console.log('techProductForm', value)
+      if (this.isSearchAllowed) {
+        this.search(value);
+      }
+    })
+    //資料類型
+    this.techDataForm.valueChanges.subscribe(value => {
+      if (this.isSearchAllowed) {
+        this.search(value);
+      }
+    })
   }
 
   ngAfterViewInit() {
@@ -154,8 +180,41 @@ export class TechnicalSupportComponent implements OnInit, AfterViewInit {
   }
 
   //搜尋=>單純將api送出，主要控制下拉選單
-  search() {
+  search(value: string | null) {
+
+    // 打出api前，设置 isSearchAllowed 为 false 防止额外的搜索
+    this.isSearchAllowed = false;
+
     //打出api
+    // const apiUrl = 'https://your-api-endpoint.com';
+    // this.https.post(apiUrl, {product: value}).subscribe({
+    //   next: (response) => {
+    //     console.log('API Response:', response);
+    //     this.isSearchAllowed = true;
+    //   },
+    //   error:(error)=>{
+    //     console.error('API Call Error:', error);
+    //   }
+    // })
+
+    // 模拟 API 调用...
+    setTimeout(() => {
+      // 假设这里是 API 调用的回调
+      // API 调用完成后，重置表单控件
+      this.techProductForm.setValue(null);
+      this.techDataForm.setValue(null);
+      this.techKeywordForm.setValue(null);
+
+      // 重新允许搜索
+      this.isSearchAllowed = true;
+    }, 1000);
+
+  }
+
+  //關鍵字搜索
+  keyWordSearch() {
+    const searchValue = this.techKeywordForm.value;
+    this.search(searchValue)
   }
 
 }

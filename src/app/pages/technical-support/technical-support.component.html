@@ -4,31 +4,40 @@
     <div class="main-pages-container-cont">
       <!-- 內容放置區 -->
       <div class="container-row tech-container-row">
-        <p class="pages-title-2">技術支持</p>
+        <div class="pages-title-2">
+          <span>技術支持</span>
+          <mat-icon>settings</mat-icon>
+        </div>
         <div class="tech-container">
           <!--  搜索欄 -->
           <div class="tech-search-bar">
             <!--產品類型-->
-            <mat-form-field>
+            <mat-form-field appearance="outline" class="tech-field">
               <mat-label>產品類型</mat-label>
-              <mat-select>
+              <mat-select [formControl]="techProductForm">
                 <mat-option [value]="null">請選擇</mat-option>
                 <mat-option *ngFor="let product of techProducts" [value]="product">{{ product }}</mat-option>
               </mat-select>
             </mat-form-field>
             <!--資料類型-->
-            <mat-form-field>
+            <mat-form-field appearance="outline" class="tech-field">
               <mat-label>資料類型</mat-label>
-              <mat-select>
+              <mat-select [formControl]="techDataForm">
                 <mat-option [value]="null">請選擇</mat-option>
-                <mat-option *ngFor="let data of techDatas"  [value]="data">{{ data }}</mat-option>
+                <mat-option *ngFor="let data of techDatas" [value]="data">{{ data }}</mat-option>
               </mat-select>
             </mat-form-field>
 
-            <mat-form-field>
+            <mat-form-field appearance="outline">
               <mat-label>關鍵字搜索</mat-label>
-              <input matInput>
+              <div class="keyword">
+                <input matInput [formControl]="techKeywordForm">
+                <button mat-flat-button (click)="keyWordSearch()">
+                  <mat-icon>search</mat-icon>
+                </button>
+              </div>
             </mat-form-field>
+
           </div>
           <div class="table-and-paginator">
             <!--  結果列表  -->
