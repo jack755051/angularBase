@@ -4,6 +4,13 @@ import {MatPaginator} from "@angular/material/paginator";
 import {MatTableDataSource} from "@angular/material/table";
 import {FormControl} from "@angular/forms";
 import {HttpClient} from '@angular/common/http';
+import {
+  mainProductDto,
+  techProductItem,
+  techProductList
+} from "../../services/http/api/camera-type/entity/camera-type.entity";
+import {GetProductTypeService} from "../../services/common/get-product-type.service";
+import {HttpService} from "../../services/http/service-factory.http";
 
 
 const SOURCE_DATA: techSupportData[] = [
@@ -115,7 +122,6 @@ const SOURCE_DATA: techSupportData[] = [
 
 ]
 
-
 @Component({
   selector: 'app-technical-support',
   templateUrl: './technical-support.component.html',
@@ -124,13 +130,13 @@ const SOURCE_DATA: techSupportData[] = [
 export class TechnicalSupportComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  techProducts: string[] = [
-    "DVR", "NVR", "槍型攝影機", "高速球形攝影機high-speed", "CMS中控軟體"
-  ]
-
   techDatas: string[] = [
     "型錄下載", "操作手冊", "軟體下載", "其他"
   ]
+
+  productTypes: mainProductDto[] = [];
+  groupedData!: techProductList[];
+
 
   //表單初始化-產品類型 / 資料類型 / 關鍵字搜索
   techProductForm = new FormControl('')
@@ -141,11 +147,13 @@ export class TechnicalSupportComponent implements OnInit, AfterViewInit {
   isSearchAllowed = true;
 
   constructor(
-    // private https: HttpClient
+    private https: HttpService,
+    private getProductTypeService: GetProductTypeService
   ) {
   }
 
   ngOnInit() {
+    this.loadProductTypes();
     //透過api取得table資料
     // this.search(null)
 
@@ -215,6 +223,44 @@ export class TechnicalSupportComponent implements OnInit, AfterViewInit {
   keyWordSearch() {
     const searchValue = this.techKeywordForm.value;
     this.search(searchValue)
+  }
+
+  // 取得產品類型
+  loadProductTypes() {
+    this.getProductTypeService.getProductType().subscribe({
+      next: (data) => {
+        this.productTypes = [...data]
+
+        const convertedData: techProductList[] = this.productTypes.reduce((acc, curr) => {
+          const existingType = acc.find(item => item.mainType === curr.mainProductType);
+
+          const newProductItem: techProductItem = {
+            value: curr.productValue ?? "", // 处理 null 的情况，根据需要调整
+            showName: curr.productTypeShowName
+          };
+
+          if (existingType) {
+            // 如果存在，向该类型的 newProductItem 数组中添加新的产品项
+            existingType.newProductItem.push(newProductItem);
+          } else {
+            // 如果不存在，创建新的类型对象并添加到累加器中
+            acc.push({
+              mainType: curr.mainProductType ?? "默认分类", // 处理 null 的情况，根据需要调整
+              newProductItem: [newProductItem]
+            });
+          }
+
+          return acc;
+        }, [] as techProductList[])
+
+        this.groupedData = convertedData
+
+        console.log('Product types loaded', this.groupedData);
+      },
+      error: (error) => {
+        console.error('Error loading product types', error);
+      }
+    });
   }
 
 }

@@ -11,8 +11,11 @@
 
         <div class="faq-content">
           <!--  上方選擇  -->
-          <mat-chip-listbox aria-label="Fish selection">
-            <mat-chip-option *ngFor="let faq of faqList" (click)="selectFaq(faq)">{{ faq }}</mat-chip-option>
+          <mat-chip-listbox aria-label="Fish selection" multiple>
+            <mat-chip-option *ngFor="let faq of productTypes; index as i;"
+                             [selected] = 'tempArray.includes(i)'
+                             (click)="selectIndex(i)">{{ faq.productTypeShowName }}
+            </mat-chip-option>
           </mat-chip-listbox>
           <!--  畫面展開  -->
           <div class="cont-expansion-panel">

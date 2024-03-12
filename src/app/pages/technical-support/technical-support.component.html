@@ -15,8 +15,11 @@
             <mat-form-field appearance="outline" class="tech-field">
               <mat-label>產品類型</mat-label>
               <mat-select [formControl]="techProductForm">
-                <mat-option [value]="null">請選擇</mat-option>
-                <mat-option *ngFor="let product of techProducts" [value]="product">{{ product }}</mat-option>
+                <mat-optgroup *ngFor="let group of groupedData" [label]="group.mainType">
+                  <mat-option *ngFor="let data of group.newProductItem" [value]="data.value">
+                    {{data.showName}}
+                  </mat-option>
+                </mat-optgroup>
               </mat-select>
             </mat-form-field>
             <!--資料類型-->
